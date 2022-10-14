@@ -1,39 +1,23 @@
-# STARTER-team01
+# team01-f22-5pm-1
 
 Lab instructions: <https://ucsb-cs156.github.io/f22/lab/team01/>
 
-* TODO: Update the following table, then delete this line that says "TODO".
 
 ```
 |   Name    | GitHub Id |  Service                    | Controller                |
 |-----------|-----------|-----------------------------|---------------------------| 
-|           |           | `LocationQueryService`      | `LocationController`      |   
-|           |           | `PublicHolidayQueryService` | `PublicHolidayController` |   
-|           |           | `RedditQueryService`        | `RedditController`        |   
-|           |           | `TidesQueryService`         | `TidesController`         |   
-|           |           | `UniversityQueryService`    | `UniversityController`    |
-|           |           | `ZipCodeQueryService`       | `ZipCodeController`       |
+| James     | Jameszhao1103  | `LocationQueryService`      | `LocationController`      |   
+| Gianmarco | gianmarcojp    | `PublicHolidayQueryService` | `PublicHolidayController` |   
+| Liam      | liamjet        | `RedditQueryService`        | `RedditController`        |   
+| Christian | drikdrok       | `TidesQueryService`         | `TidesController`         |   
+| Isaac     | tallyhawley    | `UniversityQueryService`    | `UniversityController`    |
+| Ethan     | ethanlee556    | `ZipCodeQueryService`       | `ZipCodeController`       |
 ```
 
 
-* TODO: Change the title of this README 
-  in the text `# STARTER-team01` above
-  to match the name of your repo, i. e., `f22-5pm-2-team01`, then delete
-  this TODO item.
+Repo: https://github.com/ucsb-cs156-f22/team01-f22-5pm-1
 
-* TODO: Correct the links to repo below, 
-  then delete this TODO.  Replace it with 
-  a link to your repo, e.g. 
-  https://github.com/ucsb-cs156-f22/f22-5pm-2-team01
-
-Repo: https://ucsb-cs156-f22/STARTER-team01
-
-* TODO: Correct the links to app on Heroku below, 
-  then delete this TODO.  Replace it with 
-  a link to your running app on Heroku, e.g.
-  https://cs156-f22-5pm-2-team01.herokuapp.com
-
-On Heroku: https://cs156-f22-5pm-2-team01.herokuapp.com
+On Heroku: https://cs156-f22-5pm-1-team01.herokuapp.com/
 
 ## About this repo
 
