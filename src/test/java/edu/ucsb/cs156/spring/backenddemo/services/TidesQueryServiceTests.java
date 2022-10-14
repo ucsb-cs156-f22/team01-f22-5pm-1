@@ -1,4 +1,4 @@
-/* package edu.ucsb.cs156.spring.backenddemo.services;
+package edu.ucsb.cs156.spring.backenddemo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
-
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.header;
 
 @RestClientTest(TidesQueryService.class)
@@ -25,8 +24,12 @@ public class TidesQueryServiceTests {
     @Test
     public void test_getJSON() {
 
-        String country = "UnitedStates";
-        String expectedURL = CountryCodeQueryService.ENDPOINT.replace("{country}", country);
+        String station = "9414290";
+        String beginDate = "20120101";
+        String endDate = "20120102";
+
+
+        String expectedURL = TidesQueryService.ENDPOINT.replace("{station}", station).replace("{beginDate}", beginDate).replace("{endDate}", endDate);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
 
@@ -35,8 +38,8 @@ public class TidesQueryServiceTests {
                 .andExpect(header("Content-Type", MediaType.APPLICATION_JSON.toString()))
                 .andRespond(withSuccess(fakeJsonResult, MediaType.APPLICATION_JSON));
 
-        String actualResult = countryCodeQueryService.getJSON(country);
+        String actualResult = tidesQueryService.getJSON(beginDate, endDate, station);
         assertEquals(fakeJsonResult, actualResult);
     }
 }
- */
+ 
