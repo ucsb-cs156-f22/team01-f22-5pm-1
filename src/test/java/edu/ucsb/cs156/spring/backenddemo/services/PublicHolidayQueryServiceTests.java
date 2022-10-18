@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
-
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.header;
 
 @RestClientTest(PublicHolidayQueryService.class)
@@ -38,7 +37,7 @@ public class PublicHolidayQueryServiceTests {
                 .andExpect(header("Content-Type", MediaType.APPLICATION_JSON.toString()))
                 .andRespond(withSuccess(fakeJsonResult, MediaType.APPLICATION_JSON));
 
-        String actualResult = publicholidayQueryService.getJSON(countryCode, year);
+        String actualResult = publicholidayQueryService.getJSON(countryCode,year);
         assertEquals(fakeJsonResult, actualResult);
     }
 }
