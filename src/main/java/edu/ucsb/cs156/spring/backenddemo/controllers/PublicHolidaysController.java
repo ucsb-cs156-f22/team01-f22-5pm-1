@@ -35,8 +35,8 @@ public class PublicHolidaysController {
         @ApiParam("2 letter country code, e.g. US, MX, CN") @RequestParam String countryCode,
         @ApiParam("year, e.g. 2012") @RequestParam String year
     ) throws JsonProcessingException {
-        log.info("getPublicHoliday: countryCode={} year={}", countryCode, year);
-        String result = publicholidayQueryService.getJSON(countryCode, year);
+        log.info("getPublicHoliday: year={} countryCode={}", year, countryCode);
+        String result = publicholidayQueryService.getJSON(year, countryCode);
         return ResponseEntity.ok().body(result);
     }
 
