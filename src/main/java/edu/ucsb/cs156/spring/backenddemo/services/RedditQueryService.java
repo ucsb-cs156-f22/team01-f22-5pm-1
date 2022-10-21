@@ -37,7 +37,6 @@ public class RedditQueryService {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.set("User-Agent","spring-boot:cs156-team01:f22 (by /u/Jethro-)");
 
         Map<String, String> uriVariables = Map.of("subreddit", subreddit);
 
